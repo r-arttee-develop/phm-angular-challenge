@@ -1,0 +1,26 @@
+
+<div class="header">
+    <span>User Group Manager</span>
+    <button (click)="addRole()" mat-fab class="header--fab-icon header-fab-icon--white"> <mat-icon>add</mat-icon></button>
+</div>
+
+<div class="user-list-container">
+    <mat-list class="user-list">
+            <mat-list-item *ngFor="let userRole of userGroups">
+              <mat-icon matListIcon>person</mat-icon>
+              <p matLine> {{userRole.name}} </p>
+
+              <button class="icon--blue" mat-icon-button (click)="editUserRole(userRole.name)">
+                    <mat-icon>edit</mat-icon>
+                    <div>Edit</div>
+              </button>
+
+              <button class="icon--blue" mat-icon-button (click)="openAddUserDialog()">
+                    <mat-icon>person_add</mat-icon>
+                    <div class="button--add-user">Add User</div>
+              </button>
+                  
+            </mat-list-item>
+          </mat-list>
+</div>
+

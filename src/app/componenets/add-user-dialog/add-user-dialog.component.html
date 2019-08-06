@@ -1,0 +1,11 @@
+<mat-selection-list  [(ngModel)]="selectedOptions" #selectedUsers (selectionChange)="onSelection($event)">
+    <mat-list-option *ngFor="let user of data" [value]="user.email">
+        {{user.firstName+' '+user.lastName}}
+    </mat-list-option>
+  </mat-selection-list>
+
+
+  <div mat-dialog-actions class="user-list--footer" cdkFocusInitial>
+    <button class="user-list--footer-btn" mat-raised-button (click)="onNoClick()">Cancel</button>
+    <button class="user-list--footer-btn user-list--footer-btn-primary" mat-raised-button [mat-dialog-close]="saveSelectedUsers()" >Save</button>
+  </div> 

@@ -1,0 +1,13 @@
+.user-list--footer {
+    float: right;
+}
+
+.user-list--footer-btn {
+    padding: 0 2rem;
+    margin-right: 1rem;
+
+    &.user-list--footer-btn-primary{
+        background-color: #2196f3;
+        color: white;
+    }
+}

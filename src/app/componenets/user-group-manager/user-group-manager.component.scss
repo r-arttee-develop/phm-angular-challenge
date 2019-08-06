@@ -1,0 +1,45 @@
+@import "../../../variables.scss";
+
+.header {
+    border-radius: 5px 5px 0 0;
+    color: $primary;
+    font-size: 1.1rem;
+    padding: 60px 60px 20px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header--fab-icon {
+        align-self: flex-end;
+        top: 3rem;
+        margin-right: 3%;
+    }
+
+    .header-fab-icon--white {
+        background-color: #ffffff;
+    }
+}
+
+.user-list-container{
+    background-color: $background-grey;
+    min-height: 100vh;
+    padding: 30px 80px;
+
+    .user-list {
+        font-size: 1.1rem;
+        word-break: break-all;
+        width: 70%;
+
+        .mat-list-item-content {
+            padding-left: 10%;
+        }
+
+        .icon--blue {
+            color: #1976d2;
+        }
+
+        .button--add-user {
+            padding-left: 15px;
+        }
+    }
+}
